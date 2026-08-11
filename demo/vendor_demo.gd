@@ -65,7 +65,7 @@ func _build_ui() -> void:
 	var layer := CanvasLayer.new()
 	add_child(layer)
 	var title := Label.new()
-	title.text = "Vendor — Lite — Demo"
+	title.text = "Vendor (Lite) · Demo"
 	title.position = Vector2(16, 12)
 	title.add_theme_font_size_override("font_size", 16)
 	layer.add_child(title)
@@ -130,7 +130,7 @@ func _refresh() -> void:
 		_shop_panel.add_child(row)
 		var stock_text := "∞" if int(e.get("stock", -1)) < 0 else str(int(e.stock))
 		var label := Label.new()
-		label.text = "%s — %dg (stock %s)" % [String(e.item.name), int(e.price), stock_text]
+		label.text = "%s: %dg (stock %s)" % [String(e.item.name), int(e.price), stock_text]
 		label.add_theme_font_size_override("font_size", 12)
 		label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		row.add_child(label)
@@ -152,7 +152,7 @@ func _refresh() -> void:
 		_bag_panel.add_child(row)
 		var sp := _vendor.get_sell_price(s.item)
 		var label := Label.new()
-		label.text = "%s ×%d — sell %dg" % [String(s.item.name), int(s.count), sp]
+		label.text = "%s ×%d: sell %dg" % [String(s.item.name), int(s.count), sp]
 		label.add_theme_font_size_override("font_size", 12)
 		label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		row.add_child(label)

@@ -1,5 +1,7 @@
 # Vendor — Lite
 
+> **New in 1.1.0:** a one-click **Setup** tab. Pick the outcome you want, press Apply, and a working component lands in your scene. Details in CHANGELOG.md.
+
 **FREE.** Single-currency vendor/shop for Godot 4.3+. Pure GDScript. MIT.
 
 The working core of the [CindieForge Vendor addon](docs/upgrade.md). One `WalletLite` for currency, one `VendorLite` for the shop. Buy and sell with two methods.
