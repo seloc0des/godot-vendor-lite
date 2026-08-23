@@ -1,15 +1,17 @@
-# Vendor — Lite
+# Vendor (Lite)
 
-> **New in 1.1.0:** a one-click **Setup** tab. Pick the outcome you want, press Apply, and a working component lands in your scene. Details in CHANGELOG.md.
+**FREE.** Single-currency vendor/shop for Godot 4.5+. Pure GDScript. MIT.
 
-**FREE.** Single-currency vendor/shop for Godot 4.3+. Pure GDScript. MIT.
+The working core of the [selodev Vendor addon](docs/upgrade.md). One `WalletLite` for currency, one `VendorLite` for the shop. Buy and sell with two methods.
 
-The working core of the [CindieForge Vendor addon](docs/upgrade.md). One `WalletLite` for currency, one `VendorLite` for the shop. Buy and sell with two methods.
+## One-click setup (no code)
+
+Enable the plugin and a **Vendor · Setup** tab appears in the editor. Pick the outcome you want and press **Apply** — the Lite component is added to your scene, baked in and editable. *(Pro unlocks the full no-code wiring — gameplay triggers, bound UI, cross-system hooks.)*
 
 ## 5-minute install
 
 1. Copy `addons/vendor_lite/` into your project's `addons/` folder.
-2. Project → Project Settings → Plugins → enable **Vendor — Lite**.
+2. Project → Project Settings → Plugins → enable **Vendor (Lite)**.
 3. Add a `WalletLite` Node to your player. Set `currency_id` and `starting_balance`.
 4. Add a `VendorLite` Node to your shopkeeper. Set `stock` (Array of `{item, price, stock, sell_price?}`).
 5. Bind wallet + inventory: `vendor.bind_wallet(wallet); vendor.bind_inventory(bag)`.
@@ -42,7 +44,6 @@ See [docs/upgrade.md](docs/upgrade.md).
 ## License
 
 MIT.
-
 
 ---
 

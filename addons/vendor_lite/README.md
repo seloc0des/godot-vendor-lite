@@ -1,8 +1,8 @@
 # Vendor — Lite
 
-**FREE.** Single-currency vendor/shop for Godot 4.3+. Pure GDScript. MIT.
+**FREE.** Single-currency vendor/shop for Godot 4.5+. Pure GDScript. MIT.
 
-The working core of the [CindieForge Vendor addon](docs/upgrade.md). One `WalletLite` for currency, one `VendorLite` for the shop. Buy and sell with two methods.
+The working core of the [selodev Vendor addon](docs/upgrade.md). One `WalletLite` for currency, one `VendorLite` for the shop. Buy and sell with two methods.
 
 ## 5-minute install
 
