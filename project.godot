@@ -5,7 +5,7 @@ config_version=5
 [application]
 
 config/name="Vendor (Lite) · Demo"
-config/description="Free single-currency shop for Godot 4.5+."
+config/description="Free single-currency shop for Godot 4.3+."
 config/features=PackedStringArray("4.5", "GL Compatibility")
 run/main_scene="res://demo/vendor_demo.tscn"
 

@@ -4,10 +4,6 @@ const DemoBag := preload("res://addons/vendor_lite/_demo_bag.gd")
 const WalletLiteScript := preload("res://addons/vendor_lite/wallet_lite.gd")
 const VendorLiteScript := preload("res://addons/vendor_lite/vendor_lite.gd")
 
-class _Item extends Resource:
-	var id: String = ""
-	var name: String = ""
-
 var _bag: Node
 var _wallet: WalletLite
 var _vendor: VendorLite
@@ -24,10 +20,11 @@ func _ready() -> void:
 	bg.anchor_right = 1; bg.anchor_bottom = 1
 	add_child(bg)
 
-	_items["apple"] = _make("apple", "Apple")
-	_items["potion"] = _make("potion", "Health Potion")
-	_items["sword"] = _make("sword", "Iron Sword")
-	_items["ring"] = _make("ring", "Magic Ring")
+	# the same files the Setup tab offers as example items
+	_items["apple"] = load("res://demo/items/apple.tres")
+	_items["potion"] = load("res://demo/items/health_potion.tres")
+	_items["sword"] = load("res://demo/items/iron_sword.tres")
+	_items["ring"] = load("res://demo/items/magic_ring.tres")
 
 	_bag = DemoBag.new()
 	add_child(_bag)
@@ -53,12 +50,6 @@ func _ready() -> void:
 
 	_build_ui()
 	_refresh()
-
-
-func _make(id_: String, name_: String) -> Resource:
-	var it := _Item.new()
-	it.id = id_; it.name = name_
-	return it
 
 
 func _build_ui() -> void:
