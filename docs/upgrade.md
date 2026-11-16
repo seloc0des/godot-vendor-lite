@@ -13,14 +13,15 @@
 - **Save-contract auto-join.** Stock state and restock timers persist.
 - **Shared `Events` autoload.** `purchase_completed`, `sale_completed`, `transaction_rejected`, `vendor_restocked`, `currency_changed`.
 
-## Migration from Lite
+## Moving from Lite
 
-`buy(item, n)` and `sell(item, n)` signatures carry over. The Lite stock Dictionary maps cleanly to a Pro `VendorSettings.stock` entry. Migration is a `class_name` swap plus optionally adopting the `CurrencyResource`-based wallet (your Lite gold wallet still works as a single-currency Pro wallet).
+The full version installs next to the Lite, in its own folder, and both run in the same project, so you can move over one piece at a time. It isn't a drop-in replacement: the class names differ, and so do some method names.
+
+`VendorLite` becomes `VendorComponent`, and `WalletLite` becomes `WalletComponent`. `buy` and `sell` keep their names. The Lite's `bind_inventory`, `bind_wallet`, `get_price`, `get_stock` and the other `get_*` helpers don't exist in the full version, so code that calls them needs rewriting. Set the stock up again in the full version.
 
 ## Where to buy
 
-The full version is on itch.io — **https://selodev.itch.io**. Both tiers share the
-same field names and method signatures, so upgrading is a class-name swap.
+The full version is on itch.io: **https://selodev.itch.io**.
 
 ## License
 
