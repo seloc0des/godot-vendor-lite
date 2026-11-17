@@ -1,6 +1,6 @@
-# Upgrade to Vendor (Pro)
+# Upgrade to the full Vendor
 
-## What Pro adds
+## What the full version adds
 
 - **Multi-currency wallets.** `WalletComponent` holds any number of currencies. `CurrencyResource` Resources define icon, color, format template per currency. Vendors can price in gold + gems simultaneously.
 - **`VendorSettings` Resource.** Author stock entries as a Resource, not a runtime Array. Each entry has item, stock, max_stock, price (multi-currency), buyback_ratio, restock_seconds, available_until, condition.

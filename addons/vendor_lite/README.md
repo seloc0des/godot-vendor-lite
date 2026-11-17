@@ -46,14 +46,14 @@ Bind the wallet and bag with `bind_wallet` / `bind_inventory` (or Wallet Path / 
 
 | Feature | Tier |
 |---|---|
-| Multi-currency wallets (gold + gems + …) | Pro |
-| Buyback ratio (auto-derive sell from buy price) | Pro |
-| Restock timers (`restock_seconds`) | Pro |
-| Conditional offers (flag / level / quest gating) | Pro |
-| Timed offers (`available_until` deadlines) | Pro |
-| Category-only sell-back filtering | Pro |
-| Styled `ShopUI` with icons, Buy/Sell tabs and a wallet bar | Pro |
-| Save-contract auto-join + shared `Events` bus | Pro |
+| Multi-currency wallets (gold + gems + …) | Full version |
+| Buyback ratio (auto-derive sell from buy price) | Full version |
+| Restock timers (`restock_seconds`) | Full version |
+| Conditional offers (flag / level / quest gating) | Full version |
+| Timed offers (`available_until` deadlines) | Full version |
+| Category-only sell-back filtering | Full version |
+| Styled `ShopUI` with icons, Buy/Sell tabs and a wallet bar | Full version |
+| Save-contract auto-join + shared `Events` bus | Full version |
 
 See [docs/upgrade.md](docs/upgrade.md).
 
